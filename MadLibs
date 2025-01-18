@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        String adj1;
+        String noun1;
+        String verb1;
+        String adj2;
+        String noun2;
+        String verb2;
+
+        System.out.println("enter an Adjective");
+        adj1=scanner.nextLine();
+        System.out.println("enter a noun");
+        noun1=scanner.nextLine();
+        System.out.println("enter a verb");
+        verb1=scanner.nextLine();
+        System.out.println("enter an adjective");
+        adj2=scanner.nextLine();
+        System.out.println("enter a noun");
+        noun2=scanner.nextLine();
+        System.out.println("enter a verb");
+        verb2=scanner.nextLine();
+        System.out.println("David Lynch is a "+adj1+" filmmaker.");
+        System.out.println("His "+noun1+verb1+" many people to learn about movies.");
+        System.out.println("His movies are "+adj2+" and also enjoyable");
+        System.out.println("His most popular movie "+noun2+" is about a queer woman who "+verb2+" crimes");
+        scanner.close();
+
+
+    }
+}
