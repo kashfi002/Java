@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class hu {
+    public static void main(String[] args){
+        Scanner mo=new Scanner(System.in);
+        double principle;
+        double rate;
+        int timesComp;
+        int time;
+        double amount;
+        System.out.println("Enter principle amount:");
+        principle=mo.nextDouble();
+        System.out.println("Enter interest rate: ");
+        rate=mo.nextDouble()/100;
+        System.out.println("Enter time compound: ");
+        timesComp=mo.nextInt();
+        System.out.println("Enter number of years: ");
+        time=mo.nextInt();
+        amount=principle*(Math.pow(1+(rate/timesComp),time*timesComp));
+        System.out.printf("your amount is: %f",amount);
+
+        mo.close();
+    }
+}
