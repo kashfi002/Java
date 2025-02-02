@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class tempConvrt {
+    public static void main(String[] args) {
+        Scanner mno = new Scanner(System.in);
+        double temp;
+        double newTemp;
+        String unit;
+        System.out.println("Enter temperature");
+        temp=mno.nextDouble();
+        System.out.println("Do you want to convert to C or F? C:F");
+        unit=mno.next().toUpperCase();
+        newTemp=(unit.equals("C"))?(temp-32)*5/9 : (temp*5/9)+32;
+        System.out.printf("%.2f %s",newTemp,unit);
+
+        mno.close();
+    }
+}
